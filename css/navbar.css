@@ -6,6 +6,7 @@ nav{
     background: linear-gradient(to right, #2c3e50, #24252a);
     min-height: 8vh;
     text-decoration: none;
+    position: fixed;
 }
 nav, li, a {
     font-family: "Montserrat" , sans-serif;
@@ -14,6 +15,7 @@ nav, li, a {
     color: aliceblue;
     list-style: none;
     text-decoration: none;
+    
 }
 .nav_links{
     display: flex;
@@ -48,7 +50,7 @@ nav, li, a {
         overflow-x: hidden;
     } 
     .nav{
-        position: absolute;
+        position: fixed;
     }
     .nav_links{
         position: absolute;

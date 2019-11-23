@@ -10,5 +10,16 @@ body{
     font-weight: 500;
 }
 
+.frontPage{
+    display: flex;
+    justify-content: space-around;
+}
 
+.frontPage .title{
+    margin: 20%;
+}
 
+.frontPage h2{
+    margin: 20px;
+    text-align: center;
+}
