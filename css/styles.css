@@ -8,18 +8,37 @@
 body{
     font-family: "Montserrat" , sans-serif;
     font-weight: 500;
+
 }
 
 .frontPage{
+    top: 8vh;
+    height: 92vh;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: blueviolet;
 }
 
-.frontPage .title{
-    margin: 20%;
+.frontPage, .title{
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
 }
 
 .frontPage h2{
     margin: 20px;
     text-align: center;
+}
+.frontPage p{
+    margin: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .frontPage{
+
+    }
 }

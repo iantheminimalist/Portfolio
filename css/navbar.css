@@ -1,12 +1,15 @@
 nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background: -webkit-linear-gradient(to right, #2c3e50, #24252a); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2c3e50, #24252a);
     min-height: 8vh;
     text-decoration: none;
-    position: fixed;
+    position: sticky;
+    top: 0;
+
 }
 nav, li, a {
     font-family: "Montserrat" , sans-serif;
@@ -19,7 +22,6 @@ nav, li, a {
 }
 .nav_links{
     display: flex;
-    justify-content: space-around;
 }
 .nav_links li{
     padding: 25px;
@@ -55,9 +57,9 @@ nav, li, a {
     .nav_links{
         position: absolute;
         right: 0;
-        height: 92vh; /* cuz the navbar is 8vh*/
+        height: 92vh; 
         top: 8vh;
-        background: -webkit-linear-gradient(to right, #2c3e50, #24252a); /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, #2c3e50, #24252a); 
         background: linear-gradient(to right, #2c3e50, #24252a);
         display: flex;
         flex-direction: column;
