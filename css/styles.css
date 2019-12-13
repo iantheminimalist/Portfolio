@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
 }
+
+
 body{
     font-family: "Montserrat" , sans-serif;
 }
@@ -18,20 +20,53 @@ body{
 .mb-10{
     margin-top:10px;
 }
-
-.frontPage{
+.section{
     height: 90vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to right top, 
-    rgba(8,33,71,0.5), rgba(38,45,75,0.5), rgba(57,58,79,0.5), rgba(73,72,83,0.5), rgba(87,87,87,0.5)),
+    margin: 1.5em 0;
+    position: relative;
+    background-color: white;
+}
+
+.section h2{
+    margin:  20px 0;
+    text-align: center;
+}
+.section img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.frontPage, 
+.frontPage2{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+  
+}
+
+.frontPage{
+    background: linear-gradient(
+        to right top, 
+    rgba(8,33,71,0.5),
+    rgba(38,45,75,0.5), 
+    rgba(57,58,79,0.5), 
+    rgba(73,72,83,0.5), 
+    rgba(87,87,87,0.5)),
     url('https://res.cloudinary.com/dvdqlvy48/image/upload/v1575099976/laptop-2557574_1920.jpg') no-repeat center center fixed;
-    -webkit-background-size:  cover;
-    -moz-background-size:  cover;
-    -o-background-size:  cover;
-    background-size:  cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
 
 }
 .frontPage h2{
@@ -43,40 +78,16 @@ body{
 .frontPage p{
     text-align: center;
 }
-.section{
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    margin: 1.5em 0;
-    position: inherit;
-}
 
-.section h2{
-    margin:  20px 0;
-    text-align: center;
-}
-.section img{
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-
-}
 .frontPage2{
-    height: 90vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    
     background: linear-gradient(to right top, 
     rgba(8,33,71,0.5), rgba(38,45,75,0.5), rgba(57,58,79,0.5), rgba(73,72,83,0.5), rgba(87,87,87,0.5)),
     url('https://res.cloudinary.com/dvdqlvy48/image/upload/v1541483758/man-1246233_1920.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;  
+    background-size: cover;
+
 }
 .wrapper{
     display: flex;
@@ -149,14 +160,10 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    position:relative;
+    position:sticky;
     background: -webkit-linear-gradient(to right, #2c3e50, #24252a);
     background: linear-gradient(to right, #2c3e50, #24252a);
 }
-
-
-
-
 @media screen and (max-width: 768px){
     .frontPage{
         height: 92vh;
@@ -166,7 +173,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     }
     .frontPage .title{
         margin: 2.5em 0;
-        font-size: 28px;
+        font-size: 24px;
     }
     .section{
         margin: 2.5em 0;
