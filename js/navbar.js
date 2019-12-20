@@ -6,8 +6,6 @@ const navDrop = () => {
         nav.classList.toggle('nav-active');
    });
 
-
-
 }
 
 const App = () => {

@@ -20,6 +20,10 @@ body{
 .mb-10{
     margin-top:10px;
 }
+
+span.fa-angle-right{
+    font-size: 20px;
+}
 .section{
     height: 90vh;
     display: flex;
