@@ -46,8 +46,9 @@ nav, li, a {
     background-color: aliceblue;
  }
 .dropdown{
-color: aliceblue;
-border: none;
+    color: aliceblue;
+    border: none;
+    transition: all 0.5s ease-in-out;
 }
 .dropdown-content{
     display: none;
@@ -59,12 +60,12 @@ border: none;
 }
 
 .dropdown-content li a{
-    color: #24252a;
+    color: aliceblue;
     text-decoration: none;
 }
 
 .dropdown-content a:hover{
-    background-color: #24252a;
+    color: #24252a;
 
 }
 .dropdown:hover .dropdown-content{
