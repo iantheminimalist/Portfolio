@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,500');
-
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,15 +15,25 @@ body{
     font-weight: 200;
     font-size: 16px;
     color: aliceblue;
-    margin: 0 20px;
+    margin: 0 auto;
 }
 .mb-10{
     margin-top:10px;
 }
-
-span.fa-angle-right{
-    font-size: 20px;
+.img-circle{
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
 }
+.mb-center{
+    margin: 0 auto;
+    text-align: center;
+}
+.header{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 48px;
+}
+/*************** SECTION STYLING ***************/
 .section{
     height: 92vh;
     display: flex;
@@ -44,16 +54,14 @@ span.fa-angle-right{
     margin: 0 auto;
     border-radius: 50%;
 }
-
+/*************** PARALLAX SECTION STYLING ***************/
 .frontPage, 
 .frontPage2{
-    height: 90vh;
+    height: 92vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-
-  
+    flex-direction: column;  
 }
 
 .frontPage{
@@ -69,9 +77,6 @@ span.fa-angle-right{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-
-
 }
 .frontPage h2{
     font-weight: 500;
@@ -97,11 +102,15 @@ span.fa-angle-right{
     display: flex;
 }
 .wrapper > div{
+    align-items: center;
     flex: 1;
     margin: 1em;
     padding: .4em;
     flex-direction: row;
 }
+
+/*************** CONTACT FORM STYLING ***************/
+
 input[type=text], input[type=email], textarea{
     font-family: "Montserrat" , sans-serif;
     width: 100%;
@@ -151,6 +160,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     opacity: 1;
     transition: 0s
 }
+/*************** SOCIAL STYLING ***************/
 .social{
     display: flex;
     justify-content: flex-start;
@@ -168,12 +178,13 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus{
     background: -webkit-linear-gradient(to right, #2c3e50, #24252a);
     background: linear-gradient(to right, #2c3e50, #24252a);
 }
+/*************** RESPONSIVE STYLING ***************/
 @media screen and (max-width: 768px){
     .frontPage{
         height: 92vh;
     }
      .frontPage2, .section{
-        height:auto;
+        height: auto;
     }
     .frontPage .title{
         margin: 2.5em 0;
